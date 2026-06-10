@@ -142,6 +142,8 @@ export default function BLEMonitor() {
 
   const supported = typeof navigator !== "undefined" && "bluetooth" in navigator;
 
+  console.log("Supported:", supported);
+
   // ── Scan ──────────────────────────────────────────────────────────────────
 
   const handleScan = async () => {
